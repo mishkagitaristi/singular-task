@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Anything 4u</title>
+        <link rel="stylesheet" href="./assets/styles/index.css" />
+    </head>
+    <body>
+        <header class="header fixed-top">
+            <div class="container-fluid">
+                <ul
+                    class="header__nav d-flex justify-content-between align-items-center"
+                >
+                    <li class="header__sidebar" onclick="sidebar()">
+                        <img src="./assets/images/hamburger.png" alt="menu" />
+                    </li>
+                    <a aria-current="page" class="header__logo" href="/"
+                        ><img src="./assets/images/logo.png" alt="site logo"
+                    /></a>
+                    <li class="header__search">
+                        <input type="search" placeholder="Search" />
+                    </li>
+
+                    <div class="dropdown">
+                        <button
+                            class="header__profile btn btn-secondary dropdown-toggle"
+                            id="dropdownMenuButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Profile
+                        </button>
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton"
+                        >
+                            <a
+                                class="dropdown-item d-flex justify-content-center align-items-center"
+                                href="#"
+                                >10000$</a
+                            >
+                            <a
+                                class="dropdown-item d-flex justify-content-center align-items-center"
+                                href="#"
+                                >Account</a
+                            >
+                            <a
+                                class="dropdown-item d-flex justify-content-center align-items-center"
+                                href="#"
+                                >Log Out</a
+                            >
+                        </div>
+                    </div>
+
+                    <a class="header__cart" href="#"
+                        ><img src="./assets/images/cart.png" alt="cart"
+                    /></a>
+                </ul>
+
+                <div class="sidebar fl" id="sidebar">
+                    <div class="sidebar__container">
+                        <a aria-current="page" href="#">
+                            <h3 class="sidebar__header">HELLO misho</h3>
+                        </a>
+                        <ul class="sidebar__productlist">
+                            <a class="sidebar__productitem" href="#">ALL</a>
+                            <a class="sidebar__productitem" href="#">PHONES</a>
+                            <a class="sidebar__productitem" href="#">CPU</a>
+                            <a class="sidebar__productitem" href="#"
+                                >DISPLAYS</a
+                            >
+                            <a class="sidebar__productitem" href="#"
+                                >VIDEO CARDS</a
+                            >
+                            <a class="sidebar__productitem" href="#"
+                                >HEADSETS</a
+                            >
+                            <a class="sidebar__productitem" href="#"
+                                >KEYBOARDS</a
+                            >
+                            <a class="sidebar__productitem" href="#">MOUSE</a>
+                            <a class="sidebar__productitem" href="#"
+                                >MOTHERBOARDS</a
+                            >
+                            <a class="sidebar__productitem" href="#"
+                                >NOTEBOOKS</a
+                            >
+                            <a class="sidebar__productitem" href="#">WEBCAM</a>
+                        </ul>
+                    </div>
+                    <div
+                        class="sidebar__rightside"
+                        id="sidebarRightside"
+                        onclick="sideClose()"
+                    ></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="container-fluid productinfo d-flex">
+            <div class="productinfo__images">
+                <div class="productinfo__images--small">
+                    
+                </div>
+                <img src="" alt="" class="productinfo__images--big">                
+            </div>
+            <div class="productinfo__description"></div>
+        </section>
+
+
+
+
+
+
+
+
+        <footer
+            class="footer container-fluid d-flex justify-content-around align-items-center fixed-bottom"
+        >
+            <img src="./assets/images/logo.png" alt="site logo" />
+            <div class="footer__aboutus d-flex flex-column">
+                <h3 class="footer__aboutus__header">About Us</h3>
+                <span class="footer__aboutus__info"
+                    >We are israel Tech-Hub second course students</span
+                ><span class="footer__aboutus__name">Luka Simonishvili</span
+                ><span class="footer__aboutus__name">Mikheil Mamniashvili</span
+                ><span class="footer__aboutus__name">Zviad Qafianidze</span>
+            </div>
+        </footer>
+
+        <script src="./assets/scripts/default.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
